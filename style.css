@@ -1,0 +1,322 @@
+
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box; /*Jitni padding ya margin kisi element ko milega vo uski height or width k andar count hona chahiye ussey alag nhi. Sb kuch content area k acc hoga. */
+}
+
+body {
+    background-color: #FFCCBC
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;/*Exactly same as amazon navbar*/
+    color: white;
+    display: flex;/*To arange every component of the nav bar in a line.*/
+    align-items: center; /*To arange every component of the nav bar in the center of navbar*/
+    justify-content: space-evenly; /*Ive done this to distribute the content all over the navbar evenly*/
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("Amazon_Logo.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+} 
+
+/*Box2*/
+.address-first {
+    color: #CCCCCC;
+    font-size: 0.85rem; /*We are putting rem here so that font size height or width k according chota bada ho. By putting rem we are ensuring ki viewport k according humara font size adjust hota rhega.*/
+    margin-left: 15px;/*Deliver to icon k thoda aagey start ho rha hai so for giving that space we have added*/
+}
+
+.address-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;/*Adding this here so that icon or India dono ek sath ek line mein aayein symmetry k sath. If do cheezein ek div mein exist krti hein u should display them by flex to arrange them*/
+}
+
+/*Box3*/
+.nav-search { /*Searchbar*/
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #febd69; /* Not necessary to define here but i defined to check the visibility so that i could check ki jo width mein define kr rhi hu vo kha tk jaa rhi hai only for that*/
+    width: 920px;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.nav-search:hover {
+    border: 2px solid #febd69 ;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; /*Ab yha humney alag radius set isliye ki hai kyuki humein purey box ko curve nhi krna we pobly have to curve the left corners*/
+    border: none; /*To mix match it */
+
+}
+
+.search-input {
+    /*width: 500px; we could dp this but issey humein extra formatting krni pdegi so instead we'll do*/
+    width: 100%; /* issey bacha hua area would go to browser so no extra formatting*/ 
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    /*background-color: #febd69; Now u can efine thios here too but i changed in neav search so i didnt define it here.*/
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*Box 4 (Hello sign up vala)*/
+span {
+    font-size: 0.7rem;
+}
+
+/*Accounts and lists*/
+.nav-second {
+     font-size: 0.85rem;
+     font-weight: 700;
+}
+
+/*Box 6 (Cart)*/
+.nav-cart i{   /*Yaha pr we wrote i to provide the same style to all the ICONS inside the box and not the text only the ICONS*/
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+}
+
+.Panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: left;
+}
+
+.Panel-Options p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.Panel-Options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.Hero-Section {
+    background-image: url("Amazonfirst.jpg");
+    height: 400px;
+    background-size: cover;
+    /*Yha sey jo bhi krengey iss block mein vo krengey hero message ko align krney k liye it had nthg to do with the image*/
+    display: flex;
+    justify-content: center;/*For horizantal styling*/
+    align-items: flex-end;/*For vertical axis k acc styling*/
+    /*Yha tk mssg k liye tha rest of the styling in hero mssg sec*/
+}
+
+.Hero-Message {
+    background-color: white;
+    color: black;
+    height: 38px;
+    display: flex;
+    align-items: center; /*Vertically center mein laaney k liye*/
+    justify-content: center; /*Horizontally center mein laaney k liye*/
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px; 
+}
+
+.Hero-Message a{
+    color: #007185;
+}
+
+/*Shop-Section-Boxes*/
+.Shop-Section-Boxes {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     background-color: #FFCCBC;
+    }
+
+.box {
+   height: 400px;
+   width: 23%;
+   background-color: white;
+   padding: 20px 0px 15px;
+   margin-top: 25px;
+}
+
+.Box-Image {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.Box-Content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.Box-Content p {
+ color: #007185;
+}
+
+.scrollable-container {
+    width: 94%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevents the content from wrapping */
+    margin: 25px auto; /* Centers the container and adds margin */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: white; /* Sets the background color of the container */
+    border: 2px solid transparent;
+}
+
+.scrollable-content img {
+    display: inline-block; /* Ensure images are displayed inline */
+    margin: 10px; /* Adjust the margin as needed */
+    height: 250px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}  
+   
+/*Footer Style*/
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+ul {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+ul a{
+    display: block;  /*For the anchor tags of the unordered list*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppLogo {
+    background-image: url("Amazon_Logo.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 86px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.pages {
+    font-size: 0.8rem;
+   
+    padding-top: 25px;
+}
+
+.copyright {
+    padding-top: 5px;
+    font-size: 0.7rem;
+   
+}
+
+.footpanelbig {
+    background-color:  #1a232e;
+}
+
+.grid-container {
+    background-color: #1a232e;
+    color: #dddddd;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+        max-width: 100%; /* Adjust based on your layout preference */
+    }
+
+.grid-item {
+    
+   align-items: center;
+    padding: 0.75rem;
+    border-radius: 5px;
+    vertical-align: top;
+    font-size: 12px; /* Set font size to 12px */
+}
+
+.grid-item h6 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 12px; /* Set font size to 12px */
+}
+
+.grid-item p {
+    margin: 0;
+    font-size: 12px; /* Set font size to 12px */
+   
+    margin: 0 auto; /* Center the paragraph within the grid item */
+}

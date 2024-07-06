@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <!--We'll link font awesome too to import logos so we'll link the cdn path. CDN is content delivery network it links the nearest server to you so u get data faster. CDN js had font awesome library so we'll link that.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class = "navbar">
+            <div class="nav-logo border"> <!--We have added "Border" class here to show a bprder around the logo when mouse hovers over it.-->
+                <div class="logo"></div>
+                </div>
+                <div class="nav-address border"><!--Border class added to show border around-->
+                    <p class="address-first">Deliver To</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i> <!--Icon for Adress yk the country part on the nav bar-->
+                        <p class="address-second">India</p>
+           </div>
+        </div> <div class="nav-search"> 
+             <select class="search-select">
+                 <option>All</option>
+             </select>
+             <input placeholder="Search Amazon" class="search-input">
+             <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+             </div>
+        </div>
+        <div class="nav-signin border">
+            <p><span>Hello,sign in</span></p>
+            <p class="nav-second">Account & Lists</p> <!--Nav-second is the class that we'll use to provide styling to returns and orders so we created a common class.-->
+        </div>
+        <div class="nav-returns border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p> <!--Nav-second is the class that we'll use to provide styling to returns and orders so we created a common class.-->
+        </div>
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div> 
+        </div> 
+        <!--NavBar divs end here-->
+        <!--Now starts the div of the Panel below the navbar-->
+         <div class="Panel">
+            <div class="Panel-All">
+            <i class="fa-solid fa-bars"></i>
+            All
+            </div>
+            <div class="Panel-Options">
+                <p>Today's Deals</p>
+                    <p>Customer Service</p>
+                    <p>Registry</p>
+                    <p>Gift Cards</p>
+                    <p>Sell</p>
+            </div>
+         </div>
+    </header>
+    <!--Panel ends here-->
+    <!--Hero Section starts here-->
+    <div class="Hero-Section">
+        <div class="Hero-Message"> <!--The message in a white box that appears on the website of amazon-->
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+        </div> 
+    </div>
+    <!--Now we'll start with the boxes below the message-->
+    <div class="Shop-Section-Boxes">
+        <div class="Box1 box">
+          <div class="Box-Content">
+            <h2 style="font-size: 21px;">Refresh your space</h2>
+            <div class="Box-Image" style="background-image: url('Box1.png');"></div>
+             <p>See More</p>
+          </div>
+        </div>
+        <div class="Box2 box">
+            <div class="Box-Content">
+            <h2 style="font-size: 21px;">Gaming Accesories</h2>
+            <div class="Box-Image" style="background-image: url('Box2.png');"></div>
+             <p>See More</p>
+          </div>
+        </div>
+        <div class="Box3 box">
+            <div class="Box-Content">
+            <h2 style="font-size: 21px;">Shop deals in Fashion</h2>
+            <div class="Box-Image" style="background-image: url('Box3.png');"></div>
+             <p>See More</p>
+          </div>
+        </div>
+        <div class="Box4 box">
+            <div class="Box-Content">
+                <h2 style="font-size: 21px;">Deals in PC</h2>
+                <div class="Box-Image" style="background-image: url('Box4.png');"></div>
+                 <p>See More</p>
+              </div>
+        </div>
+        <div class="Box5 box">
+            <div class="Box-Content">
+              <h2 style="font-size: 21px;">Amazon Gadget Store</h2>
+              <div class="Box-Image" style="background-image: url('Box5.png');"></div>
+               <p>See More</p>
+            </div>
+          </div>
+          <div class="Box6 box">
+              <div class="Box-Content">
+              <h2 style="font-size: 21px;">Home Decor Under $50</h2>
+              <div class="Box-Image" style="background-image: url('Box6.png');"></div>
+               <p>See More</p>
+            </div>
+          </div>
+          <div class="Box7 box">
+              <div class="Box-Content">
+              <h2 style="font-size: 21px;">Toys Under $25</h2>
+              <div class="Box-Image" style="background-image: url('Box7.png');"></div>
+               <p>See More</p>
+            </div>
+          </div>
+          <div class="Box8 box">
+              <div class="Box-Content">
+                  <h2 style="font-size: 21px;">Fahion Trends you like</h2>
+                  <div class="Box-Image" style="background-image: url('Box8.png');"></div>
+                   <p>See More</p>
+                </div>
+          </div>
+        </div>
+
+        <!--From here we are coding for scrollable section-->
+        <div class="scrollable-container">
+            <div class="scrollable-content">
+                <h2 style="font-size: 21px;">Best Sellers in Sports & Outdoors</h2>
+                <img src="Scrollable1.png" alt="Product 1">
+                <img src="Scrollable2.png" alt="Product 2">
+                <img src="Scrollable3.png" alt="Product 3">
+                <img src="Scrollable4.png" alt="Product 4">
+                <img src="Scrollable5.png" alt="Product 5">
+                <img src="Scrollable6.png" alt="Product 1">
+                <img src="Scrollable7.png" alt="Product 2">
+                <img src="Scrollable8.png" alt="Product 3">
+                <img src="Scrollable9.png" alt="Product 4">
+                <img src="Scrollable10.png" alt="Product 5">
+            </div>
+        </div>
+        <!--From here we are adding more shopping bpxes-->
+        <div class="Shop-Section-Boxes">
+            <div class="Box11 box">
+              <div class="Box-Content">
+                <h2 style="font-size: 21px;">Warm & Welcoming Decor</h2>
+                <div class="Box-Image" style="background-image: url('Box11.png');"></div>
+                 <p>See More</p>
+              </div>
+            </div>
+            <div class="Box12 box">
+                <div class="Box-Content">
+                <h2 style="font-size: 21px;">Gaming Merchandise</h2>
+                <div class="Box-Image" style="background-image: url('Box12.png');"></div>
+                 <p>See More</p>
+              </div>
+            </div>
+            <div class="Box13 box">
+                <div class="Box-Content">
+                <h2 style="font-size: 21px;">Player's Paradise</h2>
+                <div class="Box-Image" style="background-image: url('Box13.png');"></div>
+                 <p>See More</p>
+              </div>
+            </div>
+            <div class="Box14 box">
+                <div class="Box-Content">
+                    <h2 style="font-size: 21px;">Curate your Space</h2>
+                    <div class="Box-Image" style="background-image: url('Box14.png');"></div>
+                     <p>See More</p>
+                  </div>
+            </div>
+            </div>
+
+            <!--We'll add more scrollables-->
+            <!--From here we are coding for scrollable section-->
+        <div class="scrollable-container">
+            <div class="scrollable-content">
+                <h2 style="font-size: 21px;">Best Sellers in Books</h2>
+                <img src="Scrollable11.png" alt="Product 1">
+                <img src="Scrollable12.png" alt="Product 2">
+                <img src="Scrollable13.png" alt="Product 3">
+                <img src="Scrollable14.png" alt="Product 4">
+                <img src="Scrollable15.png" alt="Product 5">
+                <img src="Scrollable16.png" alt="Product 1">
+                <img src="Scrollable17.png" alt="Product 2">
+                <img src="Scrollable18.png" alt="Product 3">
+                <img src="Scrollable19.png" alt="Product 4">
+                <img src="Scrollable20.png" alt="Product 5">
+            </div>
+        </div>
+        
+        <footer>
+            <div class="foot-panel1">
+                Back To Top
+            </div>
+            <div class="foot-panel2">
+                <ul>
+                    <p>Get to know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Amazon Science</a>
+                </ul>
+
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell on Amazon Business</a>
+                    <a>Sell Apps on Amazon</a>
+                    <a>Become an Affiliate</a>
+                    <a>Advertise Your Products</a>
+                    <a>Self Publish with Us</a>
+                    <a>Host on Amazon Hub</a>
+                    <a>See More Make Money with Us</a>
+                </ul>
+
+                <ul>
+                    <p>Amazone Payment Products</p>
+                    <a>Amazon Buisness Card</a>
+                    <a>Shop with Points</a>
+                    <a>Reload Your Balance</a>
+                    <a>Amazon Currency Converter</a>
+                </ul>
+
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a>Amazon and Covid 19/a>
+                    <a>Your Account</a>
+                    <a>Your Orders</a>
+                    <a>Shipping Rates & Policies</a>
+                    <a>Returns and Replacements</a>
+                    <a>Manage Your Content and Devices</a>
+                    <a>Help</a>
+                </ul>
+            </div>
+
+            <div class="foot-panel3">
+                <div class="AppLogo">
+                     </div>
+            </div>
+<div class="footpanelbig">
+            <div class="grid-container">
+                <div class="grid-item">
+                
+                    <h6>Amazon Music</h6>
+                    <p>Stream Millions of Songs</p>
+               
+
+                </div>
+                <div class="grid-item">
+                <h6>Amazon Ads<h6>
+                <p>Reach Customers wherever they send their time<p>
+                </div>
+
+                <div class="grid-item">
+                
+                    <h6>6pm</h6>
+                    <p>Score deals on fashion brands</p>
+                </div>
+
+                <div class="grid-item">
+                    <h6>AbeBooks</h6>
+                    <p>Books, art & collectibles</p>
+                </div>
+
+                <div class="grid-item">
+                    <h6>ACX</h6>
+                    <p>Audiobook publishing Made Easy</p>
+                </div>
+
+                <div class="grid-item">
+                    <h6>Sell on Amazon</h6>
+                    <p>Start a Selling Account</p>
+                </div>
+
+                <div class="grid-item">
+                    <h6>Amazon Buisness</h6>
+                    <p>Everything For Your Buisness</p>
+                    </div>
+
+                    <div class="grid-item">
+                    <h6>AmazonGlobal</h6>
+                    <p>Ship Orders Internationally</p>
+                    </div>
+
+                    <div class="grid-item">
+                    <h6>Home Services</h6>
+                    <p>Experienced Pros Happiness Gaurantee</p>
+                    </div>
+
+                    <div class="grid-item">
+                    <h6>Amazon Web Services</h6>
+                    <p>Scalable Cloud Computing Services</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <h6>Audible</h6>
+                        <p>Listen to Books & Original Audio Performances</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Box Office Mojo</h6>
+                        <p>Find Movie Box Office Data</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Goodreads</h6>
+                        <p>Book reviews & recommendations</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>IMDb</h6>
+                        <p>Movies, TV & Celebrities</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>IMDbPro</h6>
+                        <p>Get info Entertainment Professionals Need</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Kindle Direct Publishing</h6>
+                        <p>Indie Digital & Print Publishing Made Easy</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Prime Video Direct</h6>
+                        <p>Video Distribution Made Easy</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Shopbop</h6>
+                        <p>Designer Fashion Brands</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Woot!</h6>
+                        <p>Deals and Shenanigans</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Zappos</h6>
+                        <p>Shoes & Clothing</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Ring</h6>
+                        <p>Smart Home Security Systems</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>eero WiFi</h6>
+                        <p>Stream 4k Video in Every Room</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Blink</h6>
+                        <p>Smart Security for Every Home</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Neighbours App</h6>
+                        <p>Real-Time Crime & Safety Alerts</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>Amazon Subscription Boxes</h6>
+                        <p>Top Subscription Boxes - right to your door</p>
+                    </div>
+                    <div class="grid-item">
+                        <h6>PillPack</h6>
+                        <p>Pharmacy Simplified</p>
+                    </div>
+            </div>
+        </div>
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a>Conditions of Use</a>
+                    <a>Privacy Notice</a>
+                    <a>Your Ads Privacy Choices</a>
+                </div>
+                <div class="copyright">
+                    © 1996-2024, Amazon.com, Inc. or its affiliates
+                </div>
+            </div>
+        
+        </footer>
+    </body>
+    </html>
